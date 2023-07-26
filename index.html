@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cookie&family=Dosis:wght@200;300;500;600;700;800&family=Teko:wght@700&family=Tektur:wght@700&display=swap"
+        rel="stylesheet">
+    <title>Shape Generator</title>
+</head>
+<body>
+    <main>
+    
+    <section class="detail_container">
+        <div class="details">
+            <h1>Shape Generator</h1>
+            <p>select shape,number of shapes and color</p>
+            
+            <div class="shape">
+                <div>
+                    <input type="radio" name="circle" id="circle">
+                    <label for="circle">Circle</label>
+                </div>
+            
+                <div>
+                    <input type="radio" name="rect" id="rect">
+                    <label for="rect">Rectangle</label>
+                </div>
+            
+                <div>
+                    <input type="radio" name="square" id="square">
+                    <label for="square">Square</label>
+                </div>
+            </div>
+            
+            <div class="color_select">
+                <input type="color" name="color" id="color">
+            <label for="color">Pick color</label>
+            </div>
+            
+            
+            <form class="num_form">
+                <input type="number" max="10" min="1" step="1" placeholder="Enter upto 10">
+                <button type="submit">Generate</button>
+            </form>
+        </div>
+        
+    </section>
+
+    <section class="shape_container"></section>
+
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
